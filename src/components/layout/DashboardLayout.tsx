@@ -18,7 +18,8 @@ import {
   FiPlusCircle,
   FiUploadCloud,
   FiCheckSquare,
-  FiBarChart2
+  FiBarChart2,
+  FiSettings
 } from 'react-icons/fi';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -43,12 +44,11 @@ const DashboardLayout = ({ children, userType }: DashboardLayoutProps) => {
 
   const adminNavItems = [
     { name: 'Dashboard', href: '/admin/admin-dashboard', icon: FiHome },
-    { name: 'Manage Users', href: '/admin/manage-users', icon: FiUsers },
-    { name: 'Manage Courses', href: '/admin/manage-courses', icon: FiBook },
-    { name: 'Upload Materials', href: '/admin/upload-materials', icon: FiUploadCloud },
-    { name: 'Create Quizzes', href: '/admin/create-quizzes', icon: FiCheckSquare },
-    { name: 'Reports & Analytics', href: '/admin/reports', icon: FiBarChart2 },
-    { name: 'Manage Instructors', href: '/admin/manage-instructors', icon: FiUser },
+    { name: 'Manage Users', href: '/admin/users', icon: FiUsers },
+    { name: 'Manage Courses', href: '/admin/courses', icon: FiBook },
+    { name: 'Analytics', href: '/admin/analytics', icon: FiBarChart2 },
+    { name: 'Settings', href: '/admin/settings', icon: FiSettings },
+    { name: 'Notifications', href: '/admin/notifications', icon: FiBell },
   ];
 
   const navItems = userType === 'student' ? studentNavItems : adminNavItems;
