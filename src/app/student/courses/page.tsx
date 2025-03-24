@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from 'next';
 import DashboardLayout from '@/components/layout/DashboardLayout';
 import { FiBookOpen, FiClock, FiUsers, FiStar } from 'react-icons/fi';

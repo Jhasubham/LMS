@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from 'next';
 import DashboardLayout from '@/components/layout/DashboardLayout';
 import { FiUser, FiMail, FiCalendar, FiMapPin, FiPhone, FiEdit2 } from 'react-icons/fi';

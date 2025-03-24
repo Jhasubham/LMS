@@ -1,5 +1,3 @@
-"use client";
-
 import { Metadata } from 'next';
 import DashboardLayout from '@/components/layout/DashboardLayout';
 import { FiClock, FiCheckCircle, FiAlertCircle } from 'react-icons/fi';
